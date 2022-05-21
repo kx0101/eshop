@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Cart from './pages/Cart';
 import Login from './pages/Login';
+import Product from './pages/Product';
 
 const App = () => {
   return (
@@ -18,17 +19,15 @@ const App = () => {
 
       <Routes>
 
-          <Route path="/" element={<Home />}>
+          <Route path="*" element={<h2>Not Found</h2>} />
 
-          </Route>
+          <Route path="/" element={<Home />} />
 
-          <Route path="/cart" element={<Cart />}>
+          <Route path="/cart" element={<Cart />} />
 
-          </Route>
-
-          <Route path="/login" element={<Login />}>
-
-          </Route>
+          <Route path="/login" element={<Login />} />
+          
+          <Route path="/products/:id" element={<Product />} />
 
       </Routes>
 
