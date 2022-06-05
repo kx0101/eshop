@@ -28,8 +28,6 @@ const Register = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        console.log(message, error);
-
         // Validation
         if (password !== confirmPassword) {
             setMessage("Passwords do not match.")

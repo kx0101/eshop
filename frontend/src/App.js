@@ -11,6 +11,9 @@ import Login from './pages/Login';
 import Product from './pages/Product';
 import Register from "./pages/Register";
 import Profile from "./pages/Profile"
+import Shipping from './pages/Shipping';
+import Payment from './pages/Payment';
+import PlaceOrder from './pages/PlaceOrder'
 
 const App = () => {
   return (
@@ -25,7 +28,7 @@ const App = () => {
 
           <Route path="/" element={<Home />} />
 
-          {/* <Route path="/cart" element={<Cart />} /> */}
+          <Route path="/cart" element={<Cart />} />
 
           <Route path="/cart/:id" element={<Cart />} />
 
@@ -36,6 +39,12 @@ const App = () => {
           <Route path="/profile" element={<Profile />} />
           
           <Route path="/products/:id" element={<Product />} />
+
+          <Route path="/shipping" element={<Shipping />} />
+
+          <Route path="/payment" element={<Payment />} />
+
+          <Route path="/placeorder" element={<PlaceOrder />} />
 
       </Routes>
 

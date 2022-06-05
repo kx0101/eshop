@@ -1,5 +1,5 @@
 import React, { useState , useEffect } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { Form, Button, Row, Col } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import Message from "../components/Message"
@@ -44,7 +44,7 @@ const Profile = () => {
         }
     }
 
-    return <Row className="ml-4">
+    return <Row style={{ 'marginLeft': 5 }}>
         <Col md={3}>
             <h1>User Profile</h1>
             {message && <Message variant="danger">{message}</Message>}

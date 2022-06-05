@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import Message from '../components/Message';
-import Loader from '../components/Loader';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { Row, Col, ListGroup, Image, Form, Button, Card } from 'react-bootstrap';
 import { addToCart, removeFromCart } from '../actions/cartActions';
@@ -18,7 +17,7 @@ const Cart = () => {
   const navigate = useNavigate();
 
   const query = new URLSearchParams(location.search) // location.search = '?qty=3'
-  const qty = query.get('qty') // qty = '3'
+  let qty = query.get('qty') // qty = '3'
 
   if(!qty) {
     qty = 1;
@@ -39,8 +38,7 @@ const Cart = () => {
   }
 
   const checkoutHandler = () => {
-    console.log('checkout')
-    navigate('/login?redirect=shipping')
+    navigate('/shipping')
   }
 
   return (

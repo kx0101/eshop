@@ -11,6 +11,11 @@ export const loginUser = asyncHandler(async (req, res) => {
 
     const user = await User.findOne({ email });
 
+    if (!email || !password) {
+        res.status(400)
+        throw new Error("Please fill in the fields.")
+    }
+
     if (user && (await bcrypt.compare(password, user.password))) {
         res.status(200).json({
             _id: user._id,
@@ -35,7 +40,7 @@ export const registerUser = asyncHandler(async (req, res) => {
     // Validation
     if (!name || !email || !password) {
         res.status(400)
-        throw new Error("please include all fields");
+        throw new Error("Please include all fields");
     }
 
     // Find if user already exists
