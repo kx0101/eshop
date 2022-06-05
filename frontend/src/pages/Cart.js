@@ -8,10 +8,7 @@ import { addToCart, removeFromCart } from '../actions/cartActions';
 const Cart = () => {
 
   const { product, error, loading } = useSelector(state => state.productDetails);
-  const cart = useSelector(state => state.cart);
-  const { cartItems } = cart;
-
-  console.log(cartItems);
+  const { cartItems } = useSelector(state => state.cart);
 
   const location = useLocation();
   const navigate = useNavigate();

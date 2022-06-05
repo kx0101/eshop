@@ -5,7 +5,7 @@ import colors from 'colors';
 import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 import { router as productsRoutes } from './routes/products/productsRoutes.js'
 import { router as userRoutes } from './routes/users/userRoutes.js';
-import { router as orderRoutes } from './routes/orders/orderRoutes.js';
+import { router as ordersRoutes } from './routes/orders/orderRoutes.js';
 import { connectDB } from './config/db.js';
 
 dotenv.config();

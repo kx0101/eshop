@@ -2,7 +2,7 @@ import { configureStore, combineReducers } from '@reduxjs/toolkit';
 import { productListReducer, productDetailsReducer } from '../reducers/productReducers';
 import { cartReducer } from '../reducers/cartReducers';
 import { userLoginReducer, userRegisterReducer, userDetailsReducer, userUpdateProfileReducer } from '../reducers/userReducers'
-import { orderCreateReducer } from '../reducers/orderReducers'
+import { orderCreateReducer, orderDetailsReducer, orderPayReducer } from '../reducers/orderReducers'
 
 // getting the cart items from the local storage but we need to parse them down since they are a json object
 const cartItemsFromStorage = localStorage.getItem('cartItems') ? JSON.parse(localStorage.getItem('cartItems')) : []
@@ -31,7 +31,9 @@ const reducer = combineReducers({
     userRegister: userRegisterReducer,
     userDetails: userDetailsReducer,
     userUpdateProfile: userUpdateProfileReducer,
-    orderCreate: orderCreateReducer
+    orderCreate: orderCreateReducer,
+    orderDetails: orderDetailsReducer,
+    orderPay: orderPayReducer
 })
 
 const store = configureStore({
