@@ -1,30 +1,24 @@
-import React from 'react'
-import Header from './components/Header'
-import Home from './pages/Home';
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
-import Cart from './pages/Cart';
-import Login from './pages/Login';
-import Product from './pages/Product';
+import React from "react";
+import Header from "./components/Header";
+import Home from "./pages/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Cart from "./pages/Cart";
+import Login from "./pages/Login";
+import Product from "./pages/Product";
 import Register from "./pages/Register";
-import Profile from "./pages/Profile"
-import Shipping from './pages/Shipping';
-import Payment from './pages/Payment';
-import PlaceOrder from './pages/PlaceOrder'
-import Order from './pages/Order';
+import Profile from "./pages/Profile";
+import Shipping from "./pages/Shipping";
+import Payment from "./pages/Payment";
+import PlaceOrder from "./pages/PlaceOrder";
+import Order from "./pages/Order";
 
 const App = () => {
   return (
     <>
-    <BrowserRouter>
+      <BrowserRouter>
+        <Header />
 
-      <Header />
-
-      <Routes>
-
+        <Routes>
           <Route path="*" element={<h2>Not Found</h2>} />
 
           <Route path="/" element={<Home />} />
@@ -38,7 +32,7 @@ const App = () => {
           <Route path="/register" element={<Register />} />
 
           <Route path="/profile" element={<Profile />} />
-          
+
           <Route path="/products/:id" element={<Product />} />
 
           <Route path="/shipping" element={<Shipping />} />
@@ -48,12 +42,10 @@ const App = () => {
           <Route path="/placeorder" element={<PlaceOrder />} />
 
           <Route path="/order/:id" element={<Order />} />
-
-      </Routes>
-
-    </BrowserRouter>
+        </Routes>
+      </BrowserRouter>
     </>
   );
-}
+};
 
 export default App;
