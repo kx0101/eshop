@@ -20,23 +20,23 @@
 2. Search Box
 3. Latest Products - Carousel
 4. Pagination
-5. Profile Page
-  a. My Orders
-  b. Update Profile
-6. Product Page
-  a. Leave a review (Only 1 per User) - Comment & Rate
-  b. Reviews per product
-  c. Add to Cart based on Quantity (if It's in stock or not)
+5. Profile Page <br />
+  a. My Orders <br />
+  b. Update Profile <br />
+6. Product Page <br />
+  a. Leave a review (Only 1 per User) - Comment & Rate <br />
+  b. Reviews per product <br />
+  c. Add to Cart based on Quantity (if It's in stock or not) <br />
 8. Shopping Cart
 9. Cart Page
-10. Checkout Steps
-  a. Shipping information
-  b. Payment
-  c. Place Order
-    I. Shipping Information
-    II. Payment Method
-    III. Ordered Items
-    IV. Order Summary
+10. Checkout Steps <br />
+  a. Shipping information <br />
+  b. Payment <br />
+  c. Place Order <br />
+   &ensp; I. Shipping Information <br />
+   &ensp; II. Payment Method <br /> 
+   &ensp; III. Ordered Items <br />
+   &ensp; IV. Order Summary <br />
 
 
 ### Admin User Features
