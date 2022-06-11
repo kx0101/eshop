@@ -9,6 +9,8 @@
 
 # Database: MongoDB
 
+# Screenshots at the very bottom
+
 
 ## Features
 
@@ -204,3 +206,68 @@ Saving user
 
 ### shippingAddress
 Saving shipping information
+
+## Screenshots
+
+### Admin Orders
+
+<img src="screenshots/Admin_Orders.png" />
+
+## Admin Products
+
+<img src="screenshots/Admin_Products.png" />
+
+## Admin Users
+
+<img src="screenshots/Admin_Users.png" />
+
+## Cart
+
+<img src="screenshots/Cart.png" />
+
+## Edit Product
+
+<img src="screenshots/Edit_Product.png" />
+
+## Edit User
+
+<img src="screenshots/Edit_User.png" />
+
+## Home
+
+<img src="screenshots/Home.png" />
+
+## Order not paid
+
+<img src="screenshots/Order_Not_Paid.png" />
+
+## Order Paid and Delivered
+
+<img src="screenshots/Order_Paid_Delivered.png" />
+
+## Product
+
+<img src="screenshots/Product_Page_1.png" />
+<img src="screenshots/Product_Page_2.png" />
+
+## Profile
+
+<img src="screenshots/Profile.png" />
+
+## Search
+
+<img src="screenshots/Search.png" />
+
+## Shipping Steps
+
+<img src="screenshots/Shipping_Step_2.png" />
+<img src="screenshots/Shipping_Step_3.png" />
+<img src="screenshots/Shipping_Step_4.png" />
+
+## Sign In
+
+<img src="screenshots/Sign_In.png" />
+
+## Sign Up
+
+<img src="screenshots/Sign_Up.png" />
