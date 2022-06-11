@@ -7,7 +7,11 @@ import CheckoutSteps from "../components/CheckoutSteps";
 import { saveShippingAddress } from "../actions/cartActions";
 
 const Shipping = () => {
-  const { shippingAddress } = useSelector((state) => state.cart);
+  let { shippingAddress } = useSelector((state) => state.cart);
+
+  if (!shippingAddress) {
+    shippingAddress = {};
+  }
 
   const [address, setAddress] = useState(shippingAddress.address);
   const [city, setCity] = useState(shippingAddress.city);
