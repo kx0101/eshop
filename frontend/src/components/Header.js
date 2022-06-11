@@ -3,6 +3,7 @@ import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { logout } from "../actions/userActions";
+import SearchBox from "../components/SearchBox";
 
 const Header = () => {
   const { userInfo, loading, error } = useSelector((state) => state.userLogin);
@@ -20,6 +21,7 @@ const Header = () => {
           <Navbar.Brand href="/">eShop</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
+            <SearchBox />
             <Nav className="ms-auto">
               <Nav.Link href="/cart">
                 <i className="fas fa-shopping-cart"></i> Cart
@@ -39,6 +41,31 @@ const Header = () => {
                 <Nav.Link href="/login">
                   <i className="fas fa-user"></i> Sign In
                 </Nav.Link>
+              )}
+              {userInfo && userInfo.isAdmin && (
+                <NavDropdown title="Admin" id="us">
+                  <Nav.Link>
+                    <NavDropdown.Item
+                      onClick={() => navigate("/admin/userlist")}
+                    >
+                      Users
+                    </NavDropdown.Item>
+                  </Nav.Link>
+                  <Nav.Link>
+                    <NavDropdown.Item
+                      onClick={() => navigate("/admin/productlist")}
+                    >
+                      Products
+                    </NavDropdown.Item>
+                  </Nav.Link>
+                  <Nav.Link>
+                    <NavDropdown.Item
+                      onClick={() => navigate("/admin/orderlist")}
+                    >
+                      Orders
+                    </NavDropdown.Item>
+                  </Nav.Link>
+                </NavDropdown>
               )}
             </Nav>
           </Navbar.Collapse>

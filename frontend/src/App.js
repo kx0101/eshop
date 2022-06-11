@@ -11,6 +11,11 @@ import Shipping from "./pages/Shipping";
 import Payment from "./pages/Payment";
 import PlaceOrder from "./pages/PlaceOrder";
 import Order from "./pages/Order";
+import UserList from "./pages/UserList";
+import UserEdit from "./pages/UserEdit";
+import ProductList from "./pages/ProductList";
+import ProductEdit from "./pages/ProductEdit";
+import OrderList from "./pages/OrderList";
 
 const App = () => {
   return (
@@ -19,9 +24,15 @@ const App = () => {
         <Header />
 
         <Routes>
+          <Route path="/" element={<Home />} />
+
           <Route path="*" element={<h2>Not Found</h2>} />
 
-          <Route path="/" element={<Home />} />
+          <Route path="/search/:keyword" element={<Home />} />
+
+          <Route path="/page/:pageNumber" element={<Home />} />
+
+          <Route path="/search/:keyword/page/:pageNumber" element={<Home />} />
 
           <Route path="/cart" element={<Cart />} />
 
@@ -40,6 +51,21 @@ const App = () => {
           <Route path="/payment" element={<Payment />} />
 
           <Route path="/placeorder" element={<PlaceOrder />} />
+
+          <Route path="/admin/userlist" element={<UserList />} />
+
+          <Route path="/admin/user/:id/edit" element={<UserEdit />} />
+
+          <Route path="/admin/productlist" element={<ProductList />} />
+
+          <Route
+            path="/admin/productlist/:pageNumber"
+            element={<ProductList />}
+          />
+
+          <Route path="/admin/product/:id/edit" element={<ProductEdit />} />
+
+          <Route path="/admin/orderlist" element={<OrderList />} />
 
           <Route path="/order/:id" element={<Order />} />
         </Routes>
