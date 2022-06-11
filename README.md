@@ -49,64 +49,64 @@
 ## Backend
 
 ### Middlewares
---Admin
+--Admin <br />
 --User
 
 ### MongoDB Models
 
 Order Schema
 
---User (Object)
---orderItems (Array)
-  a. name (String)
-  b. qty (Number)
-  c. image (String)
-  d. price (String)
-  e. product (Object)
---shippingAddress (Object)
-  a. address (String)
-  b. city (String)
-  c. postalCode (String)
-  d. country (String)
---paymentMethod (String)
---paymentREsult (Object)
-  a. id (String)
-  b. status (String)
-  c. update_time (String)
-  d. email_address (String)
---itemsPrice (Number)
---taxPrice (Number)
---shippingPrice (Number)
---totalPrice (Number)
---isPaid (Boolean)
---paidAt (Date)
---isDelivered (Boolean)
---deliveredAt (Date)
+--User (Object) <br />
+--orderItems (Array) <br />
+  &ensp; a. name (String) <br />
+  &ensp; b. qty (Number) <br />
+  &ensp; c. image (String) <br />
+  &ensp; d. price (String) <br />
+  &ensp; e. product (Object) <br />
+--shippingAddress (Object) <br />
+  &ensp; a. address (String) <br />
+  &ensp; b. city (String) <br />
+  &ensp; c. postalCode (String) <br />
+  &ensp; d. country (String) <br />
+--paymentMethod (String) <br />
+--paymentREsult (Object) <br />
+  &ensp; a. id (String) <br />
+  &ensp; b. status (String) <br />
+  &ensp; c. update_time (String) <br />
+  &ensp; d. email_address (String) <br />
+--itemsPrice (Number) <br />
+--taxPrice (Number) <br />
+--shippingPrice (Number) <br />
+--totalPrice (Number) <br />
+--isPaid (Boolean) <br />
+--paidAt (Date) <br />
+--isDelivered (Boolean) <br />
+--deliveredAt (Date) <br />
 
 Product Schema
 
---User (Object)
---name (String)
---image (String)
---brand (String)
---category (String)
---description (String)
---reviews (Review Schema)
-  Review Schema
-    a. name (String)
-    b. rating (Number)
-    c. comment (String)
---rating (Number)
---numReviews (Number)
---price (Number)
---countInStock (Number)
+--User (Object) <br />
+--name (String) <br />
+--image (String) <br />
+--brand (String) <br />
+--category (String) <br />
+--description (String) <br />
+--reviews (Review Schema) <br />
+  Review Schema <br />
+    &ensp; a. name (String) <br />
+    &ensp; b. rating (Number) <br />
+    &ensp; c. comment (String) <br />
+--rating (Number) <br />
+--numReviews (Number) <br />
+--price (Number) <br />
+--countInStock (Number) <br />
 
 User Schema
 
---name (String)
---email (String)
---password (String) (using bcrypt to hash)
---isAdmin (Boolean)
+--name (String) <br />
+--email (String) <br />
+--password (String) (using bcrypt to hash) <br />
+--isAdmin (Boolean) <br />
 
 
 ### Routes
