@@ -112,7 +112,7 @@ User Schema
 ### Routes
 
 
-## Orders Routes
+### Orders Routes
 
 /api/orders
   1. POST (addOrderItems) -- Make an order
@@ -166,3 +166,41 @@ User Schema
   1. DELETE (deleteUser) -- Delete a user by Id
   2. GET (getUserById) -- Get user by Id
   3. PUT (updateUser) -- Update user by Id
+
+
+## State
+
+## Reducers
+
+productList: productListReducer, <br />
+productDetails: productDetailsReducer, <br />
+productDelete: productDeleteReducer, <br />
+productCreate: productCreateReducer, <br />
+productUpdate: productUpdateReducer, <br />
+productReviewCreate: productReviewCreateReducer, <br />
+productTopRated: productTopRatedReducer, <br />
+cart: cartReducer, <br />
+userLogin: userLoginReducer, <br />
+userRegister: userRegisterReducer, <br />
+userDetails: userDetailsReducer, <br />
+userUpdateProfile: userUpdateProfileReducer, <br />
+userList: userListReducer, <br />
+userDelete: userDeleteReducer, <br />
+userUpdate: userUpdateReducer, <br />
+orderCreate: orderCreateReducer, <br />
+orderDetails: orderDetailsReducer, <br />
+orderPay: orderPayReducer, <br />
+orderListMy: orderListMyReducer, <br />
+orderList: orderListReducer, <br />
+orderDeliver: orderDeliverReducer, <br />
+
+## Local Storage
+
+### cartItems
+Saving cart items
+
+### userInfo
+Saving user
+
+### shippingAddress
+Saving shipping information
